@@ -3,6 +3,7 @@ Overview The Ecommerce Automation Framework is a Selenium-based test automation 
 
 This project is a Java-based Selenium test automation framework following the Page Object Model (POM) design pattern. The Framework is a Selenium based test automation setup designed to test an ecommerce application. It supports both UI end-to-end testing, and is organized for clarity, scalability, and maintainability.
 📁 Project Structure
+```text
 /project-root
 │
 ├── src/
@@ -27,8 +28,8 @@ This project is a Java-based Selenium test automation framework following the Pa
 │           ├── data/
 │           │   ├── DataReader.java                      # Reads data from JSON to HashMap
 │           │   └── PurchaseOrder.json                   # JSON test data for purchase flow
-|
-|           ├── cucumber/
+│
+│           ├── cucumber/
 │           │   ├── TestNGTestRunner.java                # TestRunner for cucumber feature files
 │           │   └── ErrorValidation.feature              # feature file for error validation
 │           │   └── SubmitOrder.feature                  # feature file for submit order
@@ -36,7 +37,7 @@ This project is a Java-based Selenium test automation framework following the Pa
 │           ├── stepDefinitions/
 │           │   ├── ErrorValidationStepDefinition.java    # Step Definitions for Error Validation
 │           │   ├── StepDefinitionImplementation.java     # Step Definition for Submit Order
-|
+│
 │           ├── testComponents/
 │           │   ├── BaseTest.java                        # WebDriver setup/teardown
 │           │   ├── Listeners.java                       # ExtentReport TestNG listener
@@ -53,6 +54,7 @@ This project is a Java-based Selenium test automation framework following the Pa
 │   └── testng.xml                                       # Master suite file
 │
 └── pom.xml                                              # Maven project config (dependencies, plugins)
+
 ✅ Key Components
 🔹 pageObjects/
 Encapsulates all web page interactions using Page Object Model.
